@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+a:9:{s:9:"site_name";s:5:"isign";s:14:"site_seo_title";s:75:"移动应用内测|免费App应用分发托管|iOS证书签名|网页封包";s:17:"site_seo_keywords";s:592:"魔签,企业签名,签名,APP签名,签名,企业签名,企业账号,app企业签名,超级VIP签名,内测分发托管,app内测,app托管分发,app测试,内测,android内测,beta test,Beta app,testflight,免费内测,app下载,内测SDK,udid获取，pgy,安卓内测,内测,企业签名,APP企业签名,蒲公英企业签名,企业证书,企业证书,企业证书签名,apple企业签名,企业签名,企业签名,企业账号, 企业签名, 企业账号, apple企业账号, apple 企业账号, apple企业证书, apple 企业证书, 企业账号, 企业分发, 企业分发, 企业分发";s:20:"site_seo_description";s:316:"一口青科技-魔签专业应用分发内测签名服务商，提供一站式应用企业签名，超级VIP签名，扫码下载安装，应用托管，网页封装，应用审核上架等服务。专业技术团队为你应用分发内测保驾护航，解决开发者app内测分发托管时繁杂低效的问题";s:8:"site_icp";s:0:"";s:16:"site_admin_email";s:0:"";s:14:"site_analytics";s:0:"";s:7:"urlmode";s:1:"1";s:11:"html_suffix";s:0:"";}

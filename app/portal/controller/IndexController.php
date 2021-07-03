@@ -117,11 +117,11 @@ class IndexController extends HomeBaseController
 
             $root['data'] = Db::name('user')->find($uid);
             if (!empty($root['data']['accessKey']) && !empty($root['data']['secretKey']) && !empty($root['data']['bucket']) && !empty($root['data']['domain'])) {
-                $user = Db::name('user')->find('1');
-                $root['data']['accessKey'] = $user['accessKey'];
-                $root['data']['secretKey'] = $user['secretKey'];
-                $root['data']['bucket'] = $user['bucket'];
-                $root['data']['domain'] = $user['domain'];
+//                $user = Db::name('user')->find('1');
+//                $root['data']['accessKey'] = $user['accessKey'];
+//                $root['data']['secretKey'] = $user['secretKey'];
+//                $root['data']['bucket'] = $user['bucket'];
+//                $root['data']['domain'] = $user['domain'];
             } else {
                 $qiniu = get_qiniu_config();
                 $root['data']['accessKey'] = $qiniu['accessKey'];

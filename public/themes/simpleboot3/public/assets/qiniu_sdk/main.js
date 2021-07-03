@@ -238,7 +238,7 @@
                                 var fd = new FormData();
 
                                 fd.append('upFile', text);
-                                uploadFileHandle("/index.php/portal/Index/get_ipa_info?resultType=json", fd, function (result) {
+                                uploadFileHandle("/portal/Index/get_ipa_info?resultType=json", fd, function (result) {
                                     var map = result;
                                     var res = $.parseJSON(info.response);
                                     map["ipaFilePath"] = server + res.key;
@@ -255,13 +255,13 @@
                                     if (logoImg && logoImg.attr("isLoad") == "1") {
                                         map["appLogo"] = logoImg.attr("src");
                                     }
-
-                                    map["appName"] = appInfo['CFBundleDisplayName'];
+                                    //map["appName"] = appInfo['CFBundleDisplayName'];
+                                    map["appName"] = appInfo['CFBundleName'];
                                     map["appLogo"] = appInfo['icon'];
                                     map["provisionedDevices"] = appInfo['mobileProvision']['ProvisionedDevices'];
 
-                                    Common.AjaxPost("/index.php/portal/Index/save_app_info1", map, undefined, function (data) {
-                                        location.href = "/index.php/user/tube/editor/id/" + data;
+                                    Common.AjaxPost("/portal/Index/save_app_info1", map, undefined, function (data) {
+                                        location.href = "/user/tube/editor/id/" + data;
                                         progress.setComplete(up, data);
                                     }, function (errMsg) {
                                         progress.setCancelled();
@@ -283,7 +283,7 @@
                                 var fd = new FormData();
                                 fd.append('upFile', text);
 
-                                uploadFileHandle("/index.php/portal/Index/get_apk_info?resultType=json", fd, function (result) {
+                                uploadFileHandle("/portal/Index/get_apk_info?resultType=json", fd, function (result) {
                                     var map = result;
                                     var res = $.parseJSON(info.response);
                                     map["ipaFilePath"] = server + res.key;
@@ -308,10 +308,10 @@
                                     map["version"] = appInfo['versionName'];
                                     map["versionCode"] = appInfo['versionCode'];
 
-                                    Common.AjaxPost("/index.php/portal/Index/save_app_info", map, undefined, function (data) {
+                                    Common.AjaxPost("/portal/Index/save_app_info", map, undefined, function (data) {
                                         console.log(data);
                                         //alert(data.data);
-                                        location.href = "/index.php/user/tube/editor/id/" + data;
+                                        location.href = "/user/tube/editor/id/" + data;
                                         progress.setComplete(up, data);
                                     }, function (errMsg) {
                                         progress.setCancelled();
